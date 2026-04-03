@@ -1,5 +1,4 @@
 // src/components/Header/Header.jsx
-import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import {
   AppBar, Toolbar, Box, Button, IconButton, Drawer,
@@ -9,6 +8,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import TempleHinduIcon from '@mui/icons-material/TempleHindu';
 import './Header.scss';
+import { useState } from 'react';
 
 const navLinks = [
   { label: 'Home',    path: '/' },

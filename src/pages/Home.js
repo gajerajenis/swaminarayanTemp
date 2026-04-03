@@ -1,8 +1,7 @@
-// src/pages/Home.jsx
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {
-  Box, Typography, Grid, Card, CardContent, Button, Chip
+  Box, Typography, Grid, Button, Chip
 } from '@mui/material';
 import {
   ArrowRight, Clock, Flower2, BookOpen, Utensils, Star,
@@ -17,7 +16,6 @@ import img2 from '../Images/img5.jpg'
 import img3 from '../Images/img6.jpg'
 import img4 from '../Images/img7.jpg'
 
-// ── Marquee ──────────────────────────────────────────────────────
 function Marquee() {
   const items = [
     'Jai Swaminarayan', 'Daily Mangala Aarti at 6:00 AM',
