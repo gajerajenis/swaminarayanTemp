@@ -1,0 +1,46 @@
+// src/styles/_variables.scss
+// ─── Color Palette ───────────────────────────────────────────────
+$gold:         #C9A84C;
+$gold-light:   #F5D68A;
+$gold-dark:    #8B6914;
+$gold-shadow:  rgba(201, 168, 76, 0.3);
+
+$maroon:       #5C1A1A;
+$maroon-2:     #8B2E2E;
+$maroon-dark:  #3D0A0A;
+
+$cream:        #FBF6EC;
+$warm-white:   #FFFDF7;
+$deep:         #1A0A0A;
+
+$text-muted:   #7a5a4a;
+$text-body:    #5a3a2a;
+
+// ─── Typography ──────────────────────────────────────────────────
+$font-display: 'Cinzel', serif;
+$font-body:    'Nunito', sans-serif;
+
+// ─── Spacing ─────────────────────────────────────────────────────
+$spacing-xs:   0.5rem;
+$spacing-sm:   1rem;
+$spacing-md:   2rem;
+$spacing-lg:   4rem;
+$spacing-xl:   6rem;
+
+// ─── Breakpoints ─────────────────────────────────────────────────
+$bp-sm:        640px;
+$bp-md:        768px;
+$bp-lg:        1024px;
+$bp-xl:        1200px;
+
+// ─── Transitions ─────────────────────────────────────────────────
+$transition-fast:   all 0.2s ease;
+$transition-base:   all 0.3s ease;
+$transition-slow:   all 0.5s ease;
+$transition-slider: transform 0.9s cubic-bezier(0.77, 0, 0.175, 1);
+
+// ─── Shadows ─────────────────────────────────────────────────────
+$shadow-sm:    0 4px 16px rgba(90, 30, 10, 0.1);
+$shadow-md:    0 8px 32px rgba(90, 30, 10, 0.15);
+$shadow-lg:    0 20px 48px rgba(0, 0, 0, 0.3);
+$shadow-gold:  0 8px 24px rgba(201, 168, 76, 0.4);

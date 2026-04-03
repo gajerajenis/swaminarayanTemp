@@ -1,0 +1,186 @@
+// src/components/Footer/Footer.scss
+@import '../../palette/styles/variables.scss';
+
+.main-footer {
+  background: $deep;
+  border-top: 1.5px solid rgba(201, 168, 76, 0.2);
+}
+
+// ─── Top band ─────────────────────────────────────────────────────
+.footer-top-band {
+  background: $maroon;
+  padding: 0.7rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+}
+
+.footer-band-text {
+  font-family: $font-display !important;
+  font-size: 0.78rem !important;
+  color: $gold !important;
+  letter-spacing: 0.1em;
+}
+
+// ─── Main grid ────────────────────────────────────────────────────
+.footer-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 2.5rem;
+}
+
+// ─── Brand column ─────────────────────────────────────────────────
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+
+  .footer-logo-name {
+    font-family: $font-display !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    color: $gold-light !important;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+  }
+
+  .footer-logo-tagline {
+    font-size: 0.62rem !important;
+    color: rgba(245, 214, 138, 0.5) !important;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+}
+
+.footer-brand-desc {
+  font-size: 0.85rem !important;
+  color: rgba(245, 214, 138, 0.45) !important;
+  line-height: 1.8 !important;
+  font-weight: 300 !important;
+  max-width: 280px;
+}
+
+// ─── Social ───────────────────────────────────────────────────────
+.social-row {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.social-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: $transition-fast;
+  color: rgba(245, 214, 138, 0.55);
+  text-decoration: none;
+
+  svg { font-size: 16px !important; }
+
+  &:hover {
+    border-color: $gold;
+    color: $gold-light;
+    background: rgba(201, 168, 76, 0.1);
+  }
+}
+
+// ─── Nav columns ──────────────────────────────────────────────────
+.footer-col-title {
+  font-family: $font-display !important;
+  font-size: 0.85rem !important;
+  color: $gold-light !important;
+  margin-bottom: 1.2rem !important;
+  letter-spacing: 0.05em;
+}
+
+.footer-link {
+  display: block;
+  font-size: 0.82rem;
+  color: rgba(245, 214, 138, 0.45);
+  text-decoration: none;
+  margin-bottom: 0.6rem;
+  transition: $transition-fast;
+  font-weight: 300;
+
+  &:hover {
+    color: $gold-light;
+    padding-left: 4px;
+  }
+}
+
+// ─── Contact ──────────────────────────────────────────────────────
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 0.85rem;
+}
+
+.contact-text {
+  font-size: 0.82rem !important;
+  color: rgba(245, 214, 138, 0.5) !important;
+  line-height: 1.7 !important;
+  font-weight: 300 !important;
+}
+
+// ─── Mini darshan times ───────────────────────────────────────────
+.darshan-mini {
+  margin-top: 1.2rem;
+  padding: 1rem;
+  background: rgba(201, 168, 76, 0.05);
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  border-radius: 4px;
+}
+
+.darshan-mini-title {
+  font-family: $font-display !important;
+  font-size: 0.72rem !important;
+  color: $gold !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem !important;
+}
+
+.darshan-mini-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+
+  &:last-child { border-bottom: none; }
+
+  span {
+    font-size: 0.78rem;
+    color: rgba(245, 214, 138, 0.5);
+    font-weight: 300;
+  }
+
+  .darshan-time {
+    color: $gold-light;
+    font-weight: 600;
+  }
+}
+
+// ─── Bottom bar ───────────────────────────────────────────────────
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.footer-copy {
+  font-size: 0.75rem !important;
+  color: rgba(245, 214, 138, 0.3) !important;
+  letter-spacing: 0.04em;
+}

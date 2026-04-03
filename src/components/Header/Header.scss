@@ -1,0 +1,167 @@
+// src/components/Header/Header.scss
+@import '../../palette/styles/variables.scss';
+
+.main-header {
+  background: rgba(92, 26, 26, 0.97) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1.5px solid rgba(139, 105, 20, 0.5) !important;
+  transition: all 0.3s ease !important;
+
+  &.scrolled {
+    background: rgba(26, 10, 10, 0.98) !important;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4) !important;
+  }
+}
+
+.nav-toolbar {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem !important;
+}
+
+// ─── Logo ────────────────────────────────────────────────────────
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  flex-shrink: 0;
+
+  .logo-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(201, 168, 76, 0.4);
+    border-radius: 50%;
+    background: rgba(201, 168, 76, 0.08);
+  }
+
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+  }
+
+  .logo-name {
+    font-family: $font-display;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $gold-light;
+    letter-spacing: 0.05em;
+  }
+
+  .logo-tagline {
+    font-size: 0.62rem;
+    color: rgba(245, 214, 138, 0.55);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+}
+
+// ─── Desktop Nav ──────────────────────────────────────────────────
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.nav-link {
+  color: rgba(245, 214, 138, 0.85);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.5rem 0.9rem;
+  border-radius: 4px;
+  transition: $transition-fast;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 0.9rem;
+    right: 0.9rem;
+    height: 1.5px;
+    background: $gold;
+    transform: scaleX(0);
+    transition: transform 0.25s ease;
+    transform-origin: left;
+  }
+
+  &:hover,
+  &.active {
+    color: $gold-light;
+
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+}
+
+.donate-btn {
+  margin-left: 0.5rem !important;
+  font-size: 0.78rem !important;
+}
+
+// ─── Mobile Drawer ────────────────────────────────────────────────
+.mobile-drawer {
+  background: $maroon-dark !important;
+  width: 280px;
+  border-left: 1px solid rgba(201, 168, 76, 0.2) !important;
+}
+
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 1rem;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+
+  .drawer-title {
+    font-family: $font-display;
+    font-size: 1rem;
+    color: $gold-light;
+    letter-spacing: 0.05em;
+  }
+}
+
+.drawer-list {
+  padding: 0.5rem 0;
+}
+
+.drawer-item {
+  text-decoration: none !important;
+  color: rgba(245, 214, 138, 0.7) !important;
+  border-left: 3px solid transparent;
+  margin: 0.15rem 0;
+  transition: $transition-fast;
+
+  &:hover,
+  &.active {
+    background: rgba(201, 168, 76, 0.08) !important;
+    color: $gold-light !important;
+    border-left-color: $gold;
+  }
+
+  .MuiListItemText-primary {
+    font-family: $font-body !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
