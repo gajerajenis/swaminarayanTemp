@@ -14,7 +14,7 @@ const slides = [
   {
     id: 0,
     eyebrow: '॥ Jai Swaminarayan ॥',
-    title: 'Welcome to\Vadtal Dham',
+    title: 'Welcome to Vadtal Dham',
     subtitle: 'A divine abode of peace, devotion, and spiritual awakening — where every soul finds its path to the Lord.',
     primaryBtn: { label: 'View Darshan Timings', to: '/darshan' },
     ghostBtn: { label: 'Explore Temple', to: '/about' },
@@ -24,7 +24,7 @@ const slides = [
   {
     id: 1,
     eyebrow: 'Divine Festivals & Celebrations',
-    title: 'Experience the\nJoy of Parva',
+    title: 'Experience the Joy of Parva',
     subtitle: 'Celebrate sacred festivals with thousands of devotees. From Janmashtami to Diwali — every parva is a journey of devotion.',
     primaryBtn: { label: 'Upcoming Events', to: '/events' },
     ghostBtn: { label: 'View Gallery', to: '/gallery' },
@@ -34,7 +34,7 @@ const slides = [
   {
     id: 2,
     eyebrow: 'Spiritual Services & Seva',
-    title: 'Serve with\nPure Devotion',
+    title: 'Serve with Pure Devotion',
     subtitle: 'Join our vibrant satsang community. Offer your seva, participate in katha, and walk the path of Dharma together.',
     primaryBtn: { label: 'Join Satsang', to: '/contact' },
     ghostBtn: { label: 'Offer Seva', to: '/contact' },
@@ -44,7 +44,7 @@ const slides = [
   {
     id: 3,
     eyebrow: 'Sacred Pilgrimage',
-    title: 'Find Peace\nWithin',
+    title: 'Find Peace Within',
     subtitle: 'Embark on a spiritual journey and discover the divine grace that flows through every corner of Vadtal Dham.',
     primaryBtn: { label: 'Plan Your Visit', to: '/contact' },
     ghostBtn: { label: 'Learn More', to: '/about' },
